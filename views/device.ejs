@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="POST">
+    	<div>
+	    	<label>User Name:</label>
+    	</div>
+    	<div>
+    		<input type="text" name="uname">
+    	</div>
+    	<div>
+    		<label>Password:</label>
+    	</div>
+    	<div>
+    		<input type="password" name="password">
+    	</div>
+        <div>
+            <label>Device Name:</label>
+        </div>
+        <div>
+            <input type="text" name="dname">
+        </div>
+        <div>
+            <label>Status:</label>
+        </div>
+        <div>
+            <input type="radio" name="status" value="on"> <label>On</label>
+            <input type="radio" name="status" value="off"> <label>Off</label>
+    	<div>
+    		<input type="submit" value="Go">
+    	</div>
+  </body>
+</html>
