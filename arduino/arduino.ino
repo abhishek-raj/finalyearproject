@@ -40,7 +40,7 @@ void setup() {
         delay(1000);
     }
 
-    WiFiMulti.addAP("Raj's iPhone", "qwerty123");
+    WiFiMulti.addAP("embedded", "qwerty123");
 
     myservo.attach(D7);
     pos = 0;
@@ -55,7 +55,7 @@ void loop() {
         USE_SERIAL.print("[HTTP] begin...\n");
         // configure traged server and url
         //http.begin("https://192.168.1.12/test.html", "7a 9c f4 db 40 d3 62 5a 6e 21 bc 5c cc 66 c8 3e a1 45 59 38"); //HTTPS
-        http.begin("http://embeddedproject.herokuapp.com/devices/getStatus?dname=1234"); //HTTP
+        http.begin("http://finalproject123.herokuapp.com/devices/getStatus?dname=1234"); //HTTP
 
         USE_SERIAL.print("[HTTP] GET...\n");
         // start connection and send HTTP header
